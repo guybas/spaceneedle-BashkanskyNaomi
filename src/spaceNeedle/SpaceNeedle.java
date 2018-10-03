@@ -35,8 +35,8 @@ public class SpaceNeedle {
 	}
 	
 	public static void smallLines() {
-		for (int count=1; count<=SIZE; count++) {
-			for (int c=1; c<=SIZE; c++) {
+		for (int count = 1; count <= SIZE; count++) {
+			for (int c = 1; c <= SIZE; c++) {
 				System.out.print("   ");
 			}
 			System.out.println("||");
@@ -44,16 +44,16 @@ public class SpaceNeedle {
 	}
 	
 	public static void widening() {
-		for (int line=1; line<=SIZE; line++) {
-			for (int count=1; count<=SIZE-line; count++) {
+		for (int line = 1; line <= SIZE; line++) {
+			for (int count = 1; count <= SIZE-line; count++) {
 				System.out.print("   ");
 			}
 			System.out.print("__/");
-			for (int count=1; count<line; count++) {
+			for (int count = 1; count < line; count++) {
 				System.out.print(":::");
 			}
 			System.out.print("||");
-			for (int count=1; count<line; count++) {
+			for (int count = 1; count < line; count++) {
 				System.out.print(":::");
 			}
 			System.out.println("\\__");
@@ -62,19 +62,19 @@ public class SpaceNeedle {
 	
 	public static void connector() {
 		System.out.print("|");
-		for (int count=1; count<=SIZE*6; count++) {
+		for (int count = 1; count <= SIZE*6; count++) {
 			System.out.print("\"");
 		}
 		System.out.println("|");
 	}
 	
 	public static void narrowing() {
-		for (int line=SIZE; line>=1; line--) {
-			for(int count=1; count<=SIZE-line; count++) {
+		for (int line = SIZE; line >= 1; line--) {
+			for(int count = 1; count <= SIZE-line; count++) {
 				System.out.print("  ");
 			}
 			System.out.print("\\_");
-			for (int count=1; count<=2*line+SIZE-1; count++) {
+			for (int count = 1; count <= 2*line+SIZE-1; count++) {
 				System.out.print("/\\");
 			}
 			System.out.println("_/");
@@ -83,15 +83,15 @@ public class SpaceNeedle {
 	
 	public static void longLines() {
 		for (int line=1; line<=SIZE*SIZE; line++) {
-			for (int count=1; count<=SIZE*2+1; count++) {
+			for (int count = 1; count <= SIZE*2+1; count++) {
 				System.out.print(" ");
 			}
 			System.out.print("|");
-			for (int count=1; count<=SIZE-2; count++) {
+			for (int count = 1; count <= SIZE-2; count++) {
 				System.out.print("%");
 			}
 			System.out.print("||");
-			for (int count=1; count<=SIZE-2; count++) {
+			for (int count = 1; count <= SIZE-2; count++) {
 				System.out.print("%");
 			}
 			System.out.println("|");

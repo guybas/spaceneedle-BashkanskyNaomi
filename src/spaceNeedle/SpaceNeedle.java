@@ -35,6 +35,7 @@ public class SpaceNeedle {
 	}
 	
 	public static void smallLines() {
+		//Prints thin, small lines
 		for (int count = 1; count <= SIZE; count++) {
 			for (int c = 1; c <= SIZE; c++) {
 				System.out.print("   ");
@@ -44,6 +45,7 @@ public class SpaceNeedle {
 	}
 	
 	public static void widening() {
+		//Prints the piece wider at the bottom
 		for (int line = 1; line <= SIZE; line++) {
 			for (int count = 1; count <= SIZE-line; count++) {
 				System.out.print("   ");
@@ -61,6 +63,7 @@ public class SpaceNeedle {
 	}
 	
 	public static void connector() {
+		//Prints the single, wide line
 		System.out.print("|");
 		for (int count = 1; count <= SIZE*6; count++) {
 			System.out.print("\"");
@@ -69,6 +72,7 @@ public class SpaceNeedle {
 	}
 	
 	public static void narrowing() {
+		//Prince the piece narrower at the bottom
 		for (int line = SIZE; line >= 1; line--) {
 			for(int count = 1; count <= SIZE-line; count++) {
 				System.out.print("  ");
@@ -82,6 +86,7 @@ public class SpaceNeedle {
 	}
 	
 	public static void longLines() {
+		//prints the wide, long lines
 		for (int line=1; line<=SIZE*SIZE; line++) {
 			for (int count = 1; count <= SIZE*2+1; count++) {
 				System.out.print(" ");
